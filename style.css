@@ -1,6 +1,6 @@
 body{
 	font-family: 'Open Sans',sans-serif;
-	background-image: url(/project/img/BACKGROUND.png);
+	background-image: url(BACKGROUND.png);
   font-weight: bold;
 }
 
@@ -8,7 +8,7 @@ body{
 	border: 20px solid rgba(0,0,0,.5);
 	width: 1200px;
 	height: 780px;
-	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(/project/img/BG.png);
+	background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(BG.png);
 	position: fixed;
 	top: 50%;
 	left: 50%;
@@ -20,7 +20,7 @@ body{
 }
 
 .box{
-	background-image: url(/project/img/bgImg.jpg); 
+	background-image: url(bgImg.jpg); 
 	display: table-cell;
 	text-align: center;
 	vertical-align: middle;
