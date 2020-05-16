@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Scientific Calculator </title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div class="box">
+			<div id="app">
+  <div class="calculator">
+    <button @click="changeModeEvent" class="toggle-button">
+      <p v-if="changeMode">Show Advanced Mode &nbsp; &nbsp; &#9864;</p>
+      <p v-else>Show Basic Mode &nbsp; &nbsp; &#9862;</p>
+    </button>
+    <div class="results">
+      <input class="input" v-model="current" />
+    </div>
+    <div class="mode" v-if="changeMode">
+      <button class="button1 empty" @click="press">C</button>
+      <button class="button1 operator" @click="press">(</button>
+      <button class="button1 operator" @click="press">)</button>
+      <button class="button1 empty" @click="press">&#60;=</button>
+      <button class="button1 bagi" @click="press">/</button>
+      <button class="button1" @click="press">7</button>
+      <button class="button1" @click="press">8</button>
+      <button class="button1" @click="press">9</button>
+      <button class="button1 operator" @click="press">%</button>
+      <button class="button1 kali" @click="press">*</button>
+      <button class="button1" @click="press">4</button>
+      <button class="button1" @click="press($event)">5</button>
+      <button class="button1" @click="press">6</button>
+      <button class="button1 operator" @click="press">x ²</button>
+      <button class="button1 kurang" @click="press">-</button>
+      <button class="button1" @click="press">1</button>
+      <button class="button1" @click="press">2</button>
+      <button class="button1" @click="press">3</button>
+      <button class="button1 operator" @click="press">√</button>
+      <button class="button1 tambah" @click="press">+</button>
+      <button class="button1 operator" @click="press">±</button>
+      <button class="button1" @click="press">0</button>
+      <button class="button1 decimal" @click="press">.</button>
+      <button class="button1 equal-sign" @click="press">=</button>
+    </div>
+    <div class="mode" v-else>
+      <button class="button operator" @click="press">x ²</button>
+      <button class="button operator" @click="press">x^</button>
+      <button class="button operator" @click="press">sin</button>
+      <button class="button operator" @click="press">cos</button>
+      <button class="button operator" @click="press">tan</button>
+      <button class="button operator" @click="press">√</button>
+      <button class="button operator" @click="press">log</button>
+      <button class="button operator" @click="press">ln</button>
+      <button class="button operator" @click="press">e</button>
+      <button class="button operator" @click="press">rad</button>
+      <button class="button empty" @click="press">C</button>
+      <button class="button operator" @click="press">∘</button>
+      <button class="button operator" @click="press">x !</button>
+      <button class="button empty" @click="press">&#60;=</button>
+      <button class="button bagi" @click="press">/</button>
+      <button class="button operator" @click="press">&#x003C0;</button>
+      <button class="button" @click="press">7</button>
+      <button class="button" @click="press">8</button>
+      <button class="button" @click="press">9</button>
+      <button class="button kali" @click="press">*</button>
+      <button class="button operator" @click="press">%</button>
+      <button class="button" @click="press">4</button>
+      <button class="button" @click="press">5</button>
+      <button class="button" @click="press">6</button>
+      <button class="button kurang" @click="press">-</button>
+      <button class="button operator" @click="press">±</button>
+      <button class="button" @click="press">1</button>
+      <button class="button" @click="press">2</button>
+      <button class="button" @click="press">3</button>
+      <button class="button tambah" @click="press">+</button>
+      <button class="button operator" @click="press">(</button>
+      <button class="button operator" @click="press">)</button>
+      <button class="button operator" @click="press">0</button>
+      <button class="button decimal" @click="press">.</button>
+      <button class="button equal-sign1" @click="press">=</button>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js'></script><script  src="script.js"></script>
+
+</body>
+</html>
